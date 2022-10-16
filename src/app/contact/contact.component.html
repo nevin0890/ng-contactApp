@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row g-3">
+        <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+           <div class="row g-4">
+            <div *ngFor="let i of details.data" class="col-col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="card " style="height:800px;" >
+                    <img height="300px" src="{{i.image}}" class="card-img-top" alt="...">
+                    <h6>{{i.id}}</h6>
+                    <h6>{{i.name}}</h6>
+                    <h6>{{i.email}}</h6>
+                    <h6>{{i.vat}}</h6>
+                    <h6>{{i.phone}}</h6>
+                    <h6>{{i.country}}</h6>
+                    <h2>Address</h2>
+                    <div *ngFor="let j of i.addresses">
+                    <h6>{{j.id}}</h6>
+                    <h6>{{j.street}}</h6>
+                    <h6>{{j.streetName}}</h6>
+                 </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+

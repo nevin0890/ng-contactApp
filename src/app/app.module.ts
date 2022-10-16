@@ -5,14 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import{HttpClientModule} from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 const routes: Routes = [
 
+  {path: '', component: ContactComponent},
+
 ]
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
